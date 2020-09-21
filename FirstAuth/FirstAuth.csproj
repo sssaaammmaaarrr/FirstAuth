@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>aspnet-FirstAuth-7213700B-31F4-4D01-8DB1-01DDECB0E592</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Data\Migrations\20200918233334_AddStudentTable.cs" />
+    <Compile Remove="Data\Migrations\20200918233334_AddStudentTable.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200920004547_createStudentTable.cs" />
+    <Compile Remove="Data\Migrations\20200920004547_createStudentTable.Designer.cs" />
+    <Compile Remove="Data\Migrations\20200920201653_addTeacherTable.cs" />
+    <Compile Remove="Data\Migrations\20200920201653_addTeacherTable.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>
